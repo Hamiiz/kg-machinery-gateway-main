@@ -10,9 +10,9 @@ export default defineConfig({
     tanstackStart({
       server: {
         entry: "server",
-        preset: "node-server",  // 👈 add this
-      }
+        preset: "node-server",
+      },
     }),
-    react()
+    react(),
   ],
 });
