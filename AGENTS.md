@@ -1,0 +1,3 @@
+- Keep page-specific SEO in leaf route head() declarations so titles, canonicals and structured data are present in initial SSR HTML.
+- Shared homepage SEO data lives in src/lib/site-seo.ts; use host-relative business/canonical URLs until a published public origin is available, while social image URLs must be publicly accessible HTTPS renditions.
+- Fleet entries own descriptive alt text and intrinsic image dimensions so homepage and fleet views stay consistent.
