@@ -5,5 +5,14 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   resolve: { tsconfigPaths: true },
-  plugins: [tailwindcss(), tanstackStart({ server: { entry: "server" } }), react()],
+  plugins: [
+    tailwindcss(),
+    tanstackStart({
+      server: {
+        entry: "server",
+        preset: "node-server",  // 👈 add this
+      }
+    }),
+    react()
+  ],
 });
